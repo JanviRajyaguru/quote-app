@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0B8A8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="457dp"
+        android:layout_height="309dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="100dp"
+        android:text="Random Quote Generator"
+        android:textColor="#040957"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+
+    <Button
+        android:id="@+id/generateQuoteButton"
+        android:layout_width="187dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="#0000FF"
+        android:text="Generate Quote"
+        android:textColor="#040957"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quoteTextView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generateQuoteButton"
+        app:layout_constraintVertical_bias="0.303">
+
+        <ImageButton
+            android:id="@+id/whatsappButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/whatsapp"
+            android:src="@drawable/ic_whatsapp" />
+
+        <ImageButton
+            android:id="@+id/instagramButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/instagram"
+            android:src="@drawable/ic_instagram" />
+
+        <ImageButton
+            android:id="@+id/gmailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gmail"
+            android:src="@drawable/ic_gmail" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

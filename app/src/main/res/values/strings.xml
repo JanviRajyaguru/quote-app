@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">quote</string>
+    <string name="whatsapp">Share via WhatsApp</string>
+    <string name="instagram">Share via Instagram</string>
+    <string name="gmail">Share via Gmail</string>
+
+</resources>
